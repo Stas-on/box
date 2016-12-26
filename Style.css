@@ -1,1 +1,28 @@
+.banner{
+	margin: 117px 15px;
+	border:4px solid #F3890F;
+	border-radius: 5px;
+	width: 270px;
+	height: 430px;
+	text-align: center;
+	color: white;
+	box-shadow: 0 0 4px 3px #D5E2EB;
+}
+.banner div:first-child{
+	background-color: #F3890F;
+	font: bold 19px/68px Arial;
+	height: 68px;
+}
+.banner div:nth-child(2){
+	width: 100%;
+	padding: 1px 0;
+	color: black;
+	font: 19px/20px Arial;
+}
 
+p.price{
+	font: bold 69px Arial;
+}
+sub, sup{
+	font: normal 19px Arial;
+}
