@@ -1,28 +1,73 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*-------------------------------------Банер----------------------------------------*/
 .banner{
-	margin: 117px 15px;
+	margin: 15px;
 	border:4px solid #F3890F;
 	border-radius: 5px;
-	width: 270px;
-	height: 430px;
+	width: 290px;
 	text-align: center;
-	color: white;
 	box-shadow: 0 0 4px 3px #D5E2EB;
 }
 .banner div:first-child{
+  width: 100%;
 	background-color: #F3890F;
-	font: bold 19px/68px Arial;
-	height: 68px;
+	font: bold 22px/69px Arial;
+	height: 69px;
+  color: white;
 }
 .banner div:nth-child(2){
 	width: 100%;
-	padding: 1px 0;
 	color: black;
-	font: 19px/20px Arial;
 }
-
-p.price{
-	font: bold 69px Arial;
+.banner p:first-child{
+  font: 22px/60px Arial;
 }
-sub, sup{
-	font: normal 19px Arial;
+.banner p:nth-child(2){
+	font: 600 69px Arial;
+  margin-bottom: 25px;
+}
+.banner p:nth-child(2):before{
+  content: '$';
+	font: 20px Arial;
+  vertical-align: top;
+}
+.banner p:nth-child(2):after{
+  content: 'Monthly';
+	font: 20px Arial;
+  vertical-align: bottom;
+}
+.banner ul{
+  margin-bottom: 20px;
+  padding: 0 10px;
+  list-style-type: none;
+  text-align: left;
+  width: 100%;
+  max-width: 100%;
+}
+.banner li{
+  padding: 8px 0 9px 45px;
+  margin: 0 5px 1px 5px;
+  background-color: #EBEBEB;
+  font: 13px Arial;
+}
+.banner li:nth-child(odd){
+  background-color: #E0F1F5;
+}
+.banner li:last-child{
+  background-color: white;
+  padding: 18px 0 10px 0;
+}
+.banner button{
+  width: 100%;
+  padding: 11px;
+  background-color: #F3890F;
+  border-radius: 6px;
+  box-shadow: 0 3px 0 #D58308;
+  color: white;
+  font: 700 14px Arial;
+  border: none;
 }
