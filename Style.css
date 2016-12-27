@@ -3,6 +3,57 @@
   margin: 0;
   padding: 0;
 }
+
+nav ul{
+  list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+a{text-decoration:none;}
+*{box-sizing: border-box;}
+  /*-----------------------------------------Nav------------------------------------*/
+header{background-color: #419AFF;}
+nav{
+  width:900px;
+  margin: 0 auto;
+}
+nav ul{
+  position: relative;
+  text-align: center;
+}
+nav li{
+  display: inline-block;
+}
+nav li>a{
+  display: block;
+  padding: 5px 10px;
+  font: 200 19px Impact;
+  color: white;
+}
+nav a:hover{
+  background-color: #E2E2E2;
+  color: gray;
+}
+nav li:hover div{
+  display: block;
+}
+nav div{
+  display: none;
+  position: absolute;
+  top: 33px;
+  left: 0;
+  width: 900px;
+  background-color: #E2E2E2;
+  box-shadow: 0 2px gray;
+}
+nav div a{
+  color: gray;
+  width: 86px;
+  display: inline-block;
+  padding: 7px;
+}
+
+
 /*-------------------------------------Банер----------------------------------------*/
 .banner{
 	margin: 15px;
