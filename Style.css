@@ -22,7 +22,7 @@ input:focus{outline: none;}
 	text-transform: uppercase;
 }
 .mainContainer{
-	padding: 17px 90px 0 94px;
+	padding: 17px 86px 0 94px;
 	overflow: auto;
 	position: relative;
 }
@@ -31,7 +31,7 @@ input:focus{outline: none;}
 /************************************ MAIN *********************************/
 
 .main{
-	width: 892px;
+	width: 895px;
 	float: right;
 	padding: 5px 0 10px 7px;
 	position: relative;
@@ -55,7 +55,7 @@ input:focus{outline: none;}
 	color: #bababa;
 }
 .smartfonePage{
-	padding-left: 20px;
+	padding-left: 19px;
 	background: url(../images/chevron.png) no-repeat 0 50%;
 	color: #32aaff;
 }
@@ -91,7 +91,7 @@ input:focus{outline: none;}
 	width: 566px;
 	height: 180px;
 	background: url(../images/banner.png) no-repeat;
-	padding: 40px 0 0 340px;
+	padding: 40px 0 0 337px;
 	font-size: 15px;
 }
 .banner h3{
@@ -113,7 +113,7 @@ input:focus{outline: none;}
 	border-radius: 5px;
 	width: 305px;
 	height: 180px;
-	background: #ffffff;
+	margin-right: 5px;
 	text-align: right;
 	color: #414d56;
 	background: url(../images/smart_mark_big_x1.png) no-repeat 11px 4px;
@@ -163,11 +163,13 @@ input:focus{outline: none;}
 	display: inline-block;
 	margin: 20px 0;
 	font-size: 36px;
-	font-weight: 400; 
+	font-weight: 400;
+	letter-spacing: -1px;
 }
 .allModels{
 	float: right;
 	margin-top: 20px;
+	margin-right: 5px;
 	width: 148px;
 	height: 40px;
 	color: #ffffff;
@@ -252,6 +254,7 @@ input:focus{outline: none;}
 	text-transform: uppercase;
 	letter-spacing: -0.2px;
 	background: url(../images/compare_small_x1.png) no-repeat 11px 50% #fff;
+	background-size: 22px 15px;
 	cursor: pointer;
 }
 
@@ -262,13 +265,14 @@ input:focus{outline: none;}
 	width: 884px;
 	height: 165px;
 	margin: 33px 0 5px 0;
-	padding: 12px 50px 0 160px;
+	padding: 12px 50px 0 158px;
 	border-radius: 3px;
 	color: #3e464c;
 }
 .specialSale1{
 	border: 5px solid #e5e5e5;
-	background: url(../images/smart_mark_big_x1.png) no-repeat 27px 29px #fbfbfb;
+	background: url(../images/smart_mark_big_x1.png) no-repeat 25px 29px #fbfbfb;
+	background-size: 105px 100px;
 }
 .specialSale h3{
 	padding-bottom: 2px;
@@ -298,6 +302,7 @@ input:focus{outline: none;}
 	margin-top: 33px;
 	border: 5px solid #b0dfff;
 	background: url(../images/savings_x1.png) no-repeat 27px 29px #f0f9ff;
+	background-size: 90px 100px;
 }
 .specialSale2 h3{
 	letter-spacing: -1px;
@@ -456,11 +461,12 @@ input:focus{outline: none;}
 	float: right;
 	height: 17px;
 	width: 17px;
+	padding-bottom: 5px;
 	background: #109cff;
 	border: none;
 	border-radius: 50%;
-	font-size: 25px;
-	line-height: 17px;
+	font-size: 23px;
+	line-height: 1px;
 	color: #fff;
 	cursor: pointer;
 }
@@ -503,7 +509,7 @@ input:focus{outline: none;}
 /************************************ Цены *********************************/
 
 .price{
-	padding: 11px 10px;
+	padding: 11px 10px 10px;
 	border-top: 1px solid #e5e5e5;
 }
 .price span{
@@ -533,6 +539,7 @@ input:focus{outline: none;}
 	position: absolute;
 	top:-20px;
 	background: url(../images/placeholder_x1.png);
+	background-size: 14px 20px;
 }
 .priceLine:before{left: -5px;}
 .priceLine:after{right: -5px;}
@@ -541,7 +548,7 @@ input:focus{outline: none;}
 /************************************Экрыны*********************************/
 
 .diagonal{
-	padding: 10px 0 12px 10px;
+	padding: 11px 0 12px 10px;
 	border-top: 1px solid #e5e5e5;
 }
 .diagonal label{
@@ -612,12 +619,15 @@ label[for="brown"]{background-color: #a55a5a;}
 
 .memorySizeContainer .heading{border-bottom: 1px solid #e5e5e5;}
 
-.heading .plus{font-size: 18px;}
+.heading .plus{
+	font-size: 18px;
+	padding-bottom: 0;
+}
 
 input[type="reset"], input.submit{
 	width: 115px;
 	height: 35px;
-	margin: 20px 15px 0 11px; 
+	margin: 20px 15px 22px 11px; 
 	border-radius: 100px;
 	background: #ebebeb;
 	border: none;
@@ -628,7 +638,7 @@ input[type="reset"], input.submit{
 	cursor: pointer;
 }
 input.submit{
-	margin: 11px 0 25px 0;
+	margin: 20px 0 22px 0;
 	background: #ffde00;
 	color: #3e464c;
 }
