@@ -1,124 +1,659 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 *{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
-
-nav ul{
-  list-style-type: none;
-    padding: 0;
-    margin: 0;
+button:focus{outline: none;}
+input:focus{outline: none;}
+.body{
+	font-family: 'Open Sans', sans-serif;
+	width: 1351px;
 }
-a{text-decoration:none;}
-*{box-sizing: border-box;}
-  /*-----------------------------------------Nav------------------------------------*/
-header{background-color: #419AFF;}
-nav{
-  width:900px;
-  margin: 0 auto;
-}
-nav ul{
-  position: relative;
-  text-align: center;
-}
-nav li{
-  display: inline-block;
-}
-nav li>a{
-  display: block;
-  padding: 5px 10px;
-  font: 200 19px Impact;
-  color: white;
-}
-nav a:hover{
-  background-color: #E2E2E2;
-  color: gray;
-}
-nav li:hover div{
-  display: block;
-}
-nav div{
-  display: none;
-  position: absolute;
-  top: 33px;
-  left: 0;
-  width: 900px;
-  background-color: #E2E2E2;
-  box-shadow: 0 2px gray;
-}
-nav div a{
-  color: gray;
-  width: 86px;
-  display: inline-block;
-  padding: 7px;
-}
-
-
-/*-------------------------------------Банер----------------------------------------*/
-.banner{
-	margin: 15px;
-	border:4px solid #F3890F;
-	border-radius: 5px;
-	width: 290px;
+.header{
+	height: 318px;
+	padding-top: 4px;
+	background: #e8e8e8;
+	color: #c0c0c0;
 	text-align: center;
-	box-shadow: 0 0 4px 3px #D5E2EB;
+	font-size: 72px;
+	line-height: 318px;
+	letter-spacing: -1px;
+	text-transform: uppercase;
 }
-.banner div:first-child{
-  width: 100%;
-	background-color: #F3890F;
-	font: bold 22px/69px Arial;
-	height: 69px;
-  color: white;
+.mainContainer{
+	padding: 17px 90px 0 94px;
+	overflow: auto;
+	position: relative;
 }
-.banner div:nth-child(2){
-	width: 100%;
-	color: black;
+
+
+/************************************ MAIN *********************************/
+
+.main{
+	width: 892px;
+	float: right;
+	padding: 5px 0 10px 7px;
+	position: relative;
 }
-.banner p:first-child{
-  font: 22px/60px Arial;
+.main h1{
+	margin: 0;
+	font-weight: 400;
+	font-size: 36px;
+	color: #414d56;
+	letter-spacing: -1.3px;
 }
-.banner p:nth-child(2){
-	font: 600 69px Arial;
-  margin-bottom: 25px;
+.route p{
+	display: inline-block;
+	margin: 7px 10px 16px 0; 
+	font-size: 12px;
+	line-height: 16px;
 }
-.banner p:nth-child(2):before{
-  content: '$';
-	font: 20px Arial;
-  vertical-align: top;
+.shopClub{
+	padding-left: 30px;
+	background: url(../images/house.png) no-repeat 0 50%;
+	color: #bababa;
 }
-.banner p:nth-child(2):after{
-  content: 'Monthly';
-	font: 20px Arial;
-  vertical-align: bottom;
+.smartfonePage{
+	padding-left: 20px;
+	background: url(../images/chevron.png) no-repeat 0 50%;
+	color: #32aaff;
 }
-.banner ul{
-  margin-bottom: 20px;
-  padding: 0 10px;
-  list-style-type: none;
-  text-align: left;
-  width: 100%;
-  max-width: 100%;
+.shape{
+	position: absolute;
+	top: 992px;
+	left: -8px;
+	width: 222px;
+ 	height: 43px;
+	border-radius: 10px;
+	background: #109cff;
+	box-shadow: 0px 0px 14px #109cff;
+	cursor: pointer;
 }
-.banner li{
-  padding: 8px 0 9px 45px;
-  margin: 0 5px 1px 5px;
-  background-color: #EBEBEB;
-  font: 13px Arial;
+.shape:before{
+	content: "";
+	display: block;
+	width: 9px;
+	height: 9px;
+	position: relative;
+	top: 17px;
+	left: -4px;
+	-ms-transform: rotate(45deg);
+	    transform: rotate(45deg);
+	background: #109cff;
+	box-shadow: 0px 0px 14px #109cff;
 }
-.banner li:nth-child(odd){
-  background-color: #E0F1F5;
+
+/************************************ Реклама1 *********************************/
+
+.banner{
+	display: inline-block;
+	width: 566px;
+	height: 180px;
+	background: url(../images/banner.png) no-repeat;
+	padding: 40px 0 0 340px;
+	font-size: 15px;
 }
-.banner li:last-child{
-  background-color: white;
-  padding: 18px 0 10px 0;
+.banner h3{
+	font-size: 22px;
+	line-height: 26px;
+	padding-top: 1px;
 }
-.banner button{
-  width: 100%;
-  padding: 11px;
-  background-color: #F3890F;
-  border-radius: 6px;
-  box-shadow: 0 3px 0 #D58308;
-  color: white;
-  font: 700 14px Arial;
-  border: none;
+.banner div{
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	margin: 10px 0 0 65px;
+	background: #ffde00;
+}
+.banner div:last-of-type{margin-left: 5px;}
+.saleEnd{
+	float: right;
+	border: 1px solid #e5e5e5;
+	border-radius: 5px;
+	width: 305px;
+	height: 180px;
+	background: #ffffff;
+	text-align: right;
+	color: #414d56;
+	background: url(../images/smart_mark_big_x1.png) no-repeat 11px 4px;
+	background-size: 30px 28px;
+}
+.saleEnd p:first-of-type{
+	font-size: 12px;
+	text-transform: uppercase;
+	margin: 10px 10px 16px 0;
+}
+.timer{
+	font-size: 58px;
+	line-height: 46px;
+	color: #109cff;
+	padding-right: 10px;
+	letter-spacing: -2.2px;
+}
+.saleEnd span{
+ 	padding-right: 7px;
+ 	font-size: 12px;
+ 	font-weight: 700;
+ 	letter-spacing: -0.3px;
+ }
+.saleEnd p:last-of-type{
+ 	padding:  13px 10px 0 0;
+ 	color: #bababa;
+	font-size: 12px;
+	letter-spacing: -0.2px;
+ }
+.saleEnd a{
+	text-decoration: none;
+	font-size: 11.5px;
+	padding: 0 10px;
+	position: relative;
+	top: -4px;
+	color: #109cff;
+}
+
+
+/************************************ Телефоны *********************************/
+
+.smartfones{
+	margin-bottom: 12px;
+	position: relative;
+}
+.smartfones h2{
+	display: inline-block;
+	margin: 20px 0;
+	font-size: 36px;
+	font-weight: 400; 
+}
+.allModels{
+	float: right;
+	margin-top: 20px;
+	width: 148px;
+	height: 40px;
+	color: #ffffff;
+	background: #109cff;
+	font-size: 12.0px;
+	font-weight: 700;
+	line-height: 40px;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 100px;
+}
+.product{
+	display: inline-block;
+	width: 212px;
+	height: 306px;
+	text-align: center;
+	vertical-align: top;
+	border: 0.77px solid #e5e5e5;
+	border-radius: 3.85px;
+	background: #ffffff;
+}
+.product:not(:last-child){margin-right: 8px;}
+.product:hover{box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.2), 0px 0px 8px 2px #e5e5e5 inset;}
+.foneName{
+	display: block;
+	margin: 10px;
+	padding: 0 15px;
+	font-size: 12px;
+	color: #32aaff;
+	text-decoration: none;
+	letter-spacing: -0.3px;
+}
+.foneName:hover{text-decoration: underline;}
+.product img{
+	height: 165px;
+	padding: 8px 50px;
+}
+.rebate{
+	padding: 4px 0 0 26px;
+	font-size: 11px;
+	line-height: 25px;
+	color: #bababa;
+	background: url(../images/smart_mark_big_x1.png) no-repeat 35px 2px;
+	background-size: 30px 28px;
+}
+.rebate span{
+	padding-left: 4px;
+	font-size: 14px;
+}
+.buy p{
+	padding: 13px 20px 8px 0;
+	display: inline-block;
+	font-size: 18px;
+	color: #414d56;
+}
+.buy span{font-size: 12px;}
+.buy button{
+	width: 79px;
+	height: 23px;
+	margin-top: 6px;
+	border: none;
+	border-radius: 8px;
+	background: #ffde00;
+	font-size: 10px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #3e464c;
+	vertical-align: top;
+	cursor: pointer;
+}
+.compare{
+	border: 0.77px solid #e5e5e5;
+	border-radius: 67.76px;
+	width: 212px;
+	height: 33px;
+	margin-left: -1px;
+	padding: 0 0 0 13px;
+	color: #3e464c;
+	font-size: 10px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: -0.2px;
+	background: url(../images/compare_small_x1.png) no-repeat 11px 50% #fff;
+	cursor: pointer;
+}
+
+
+/************************************ Реклама2 *********************************/
+
+.specialSale{
+	width: 884px;
+	height: 165px;
+	margin: 33px 0 5px 0;
+	padding: 12px 50px 0 160px;
+	border-radius: 3px;
+	color: #3e464c;
+}
+.specialSale1{
+	border: 5px solid #e5e5e5;
+	background: url(../images/smart_mark_big_x1.png) no-repeat 27px 29px #fbfbfb;
+}
+.specialSale h3{
+	padding-bottom: 2px;
+	font-size: 24px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: -0.6px;
+}
+.specialSale p{
+	font-size: 13px;
+	padding-bottom: 19px;
+	letter-spacing: 0.1px;
+	line-height: 15px;
+}
+.specialSale a{
+	text-decoration: none;
+	font-size: 11.5px;
+	position: relative;
+	top: -10px;
+	color: #109cff;
+}
+  
+
+/************************************ Реклама3 *********************************/
+
+.specialSale2{
+	margin-top: 33px;
+	border: 5px solid #b0dfff;
+	background: url(../images/savings_x1.png) no-repeat 27px 29px #f0f9ff;
+}
+.specialSale2 h3{
+	letter-spacing: -1px;
+	word-spacing: 4px;
+}
+ 
+
+/************************************ Страницы *********************************/
+
+.page{
+	margin-top: 34px;
+	text-align: center;
+	font-size: 0;
+}
+.page a{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	font-size: 14px;
+	line-height: 40px;
+	text-decoration: none;
+	border: 1px solid #e5e5e5;
+	text-align: center;
+	color: #32aaff;
+}
+.page a:not(:first-child){border-left: none;}
+.page .activPage{
+	border-color: #32aaff;
+	color: #414d56;
+}
+
+
+.description{
+	margin: 23px 0 85px 0;
+	color: #414d56;
+}
+.description div{
+	font-size: 19px;
+	margin-bottom: 14px;
+}
+.description p{
+	font-size: 13px;
+	line-height: 15px;
+	word-spacing: 0.8px;
+}
+.description p:first-of-type{
+	margin-bottom: 15px;
+}
+/************************************ ACIDE *********************************/
+
+.aside{
+	width: 270px;
+	float: left;
+}
+.discount {
+	padding: 30px 10px 30px 12px;
+	border: 5px solid #ffde00;
+	border-radius: 3.5px;
+	height: 497px;
+	position: relative;
+}
+.discount img{
+	position: absolute;
+	top: -16px;
+	right: -5px;
+}
+.discount h4{
+	font-size: 20px;
+	font-weight: 400;
+	word-spacing: -0.5px;
+	letter-spacing: -0.4px;
+	color: #414d56; 
+}
+.otherMail h4{margin: 22px 0 1px;}
+.discount h5{
+	font-size: 11px;
+	font-weight: 400;
+	letter-spacing: -0.4px;
+	color: #414D56;
+	padding: 7px 2px 6px;
+}
+.discount h6{
+	font-size: 10px;
+	font-weight: 400;
+	letter-spacing: -0.25px;
+	color: #414D56;
+	padding: 3px 2px;
+}
+.otherMail h6, .name h6{
+	padding-left: 0;
+	letter-spacing: -0.3px;
+	padding-bottom: 5px;
+}
+.discount input {
+	padding: 5px 10px;
+	border: 0.7px solid #e5e5e5;
+	border-radius: 70px;
+	width: 239px;
+	height: 31px;
+	background: #ffffff;
+}
+.discount input:focus{outline: none;}
+.mail input{
+	width: 200px;
+	float: right;
+	margin-bottom: 4px;
+}
+.mail:nth-of-type(4) input{margin: 0;}
+.mail{
+	position: relative;
+	overflow: auto;
+}
+.mail:before{
+	content: "№1";
+	font-size: 19.6px;
+	display: block;
+	color: #e5e5e5;
+	position: absolute;
+	top:7px;
+}
+.mail:nth-of-type(2):before{content: "№2";}
+.mail:nth-of-type(3):before{content: "№3";}
+.mail:nth-of-type(4):before{content: "№4";}
+.name{padding-top: 19px;}
+.name span{color: lightgray;}
+.name input[type=submit]{
+	margin: 6px 0;
+	height: 37px;
+	background: #109CFF;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: -0.25px;
+	cursor: pointer;
+}
+
+
+/************************************ Панель отбора *********************************/
+
+.selection {
+	margin-top: 20px;
+	border: 1px solid #e5e5e5;
+	border-radius: 5px;
+}
+.heading{
+	height: 34px;
+	padding: 9px 12px;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #414d56;
+	border-top: 1px solid #e5e5e5;
+	background: #fbfbfb;
+}
+.heading button{
+	float: right;
+	height: 17px;
+	width: 17px;
+	background: #109cff;
+	border: none;
+	border-radius: 50%;
+	font-size: 25px;
+	line-height: 17px;
+	color: #fff;
+	cursor: pointer;
+}
+.heading button:active{background: lightblue;}
+
+
+/************************************ Бренды *********************************/
+
+.brend{
+	border-top: none;
+	border-radius: 5px 5px 0 0;
+}
+.brends{
+	padding: 10px 10px 12px 10px;
+	border-top: 1px solid #e5e5e5;
+}
+.brends .conteiner{
+	display: inline-block;
+	width: 133px;
+}
+.brends .conteiner2{
+	display: inline-block;
+	width: 100px;
+	vertical-align: top;
+}
+.brends label{
+	display: inline-block;
+	width: 85px;
+	padding-left: 30px;
+	margin: 0 0 12px 0;
+	font-size: 12px;
+	line-height: 20px;
+	color: #414d56;
+	background: url(../images/checkbox.png) no-repeat 0 0;
+}
+.brends input{display: none;}
+.brends input:checked + label{background: url(../images/checkboxChec.png) no-repeat 0 0;}
+
+
+/************************************ Цены *********************************/
+
+.price{
+	padding: 11px 10px;
+	border-top: 1px solid #e5e5e5;
+}
+.price span{
+	font-size: 14px;
+	color: #bababa;
+}
+.price input{
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+	width: 85px;
+	height: 33px;
+	margin: 0 5px;
+	padding: 5px;
+}
+.priceLine{
+	margin: 43px 0 15px 5px;
+	width: 238px;
+	height: 7px;
+	background: #109cff;
+	position: relative;
+}
+.priceLine:before, .priceLine:after{
+	content: " ";
+	display: inline-block;
+	width: 14px;
+	height: 20px;
+	position: absolute;
+	top:-20px;
+	background: url(../images/placeholder_x1.png);
+}
+.priceLine:before{left: -5px;}
+.priceLine:after{right: -5px;}
+
+
+/************************************Экрыны*********************************/
+
+.diagonal{
+	padding: 10px 0 12px 10px;
+	border-top: 1px solid #e5e5e5;
+}
+.diagonal label{
+	display: block;
+	padding-left: 30px;
+	margin: 0 0 13px 0;
+	font-size: 12px;
+	line-height: 20px;
+	color: #414d56;
+	background: url(../images/checkbox.png) no-repeat 0 0;
+}
+.diagonal input{display: none;}
+.diagonal input:checked + label{background: url(../images/checkboxChec.png) no-repeat 0 0;}
+.diagonal span{
+	display: inline-block;
+	position: relative;
+	top: -8px;
+}
+
+
+/************************************ Камеры *********************************/
+
+.camera{
+	padding: 11px 11px 9px 11px;
+	border-top: 1px solid #e5e5e5;
+}
+.camera label{
+	display: block;
+	padding-left: 30px;
+	margin: 0 0 14px 0;
+	font-size: 12px;
+	line-height: 20px;
+	color: #414d56;
+	background: url(../images/checkbox.png) no-repeat 0 0;
+}
+.camera input{display: none;}
+.camera input:checked + label{background: url(../images/checkboxChec.png) no-repeat 0 0;}
+
+
+/************************************ Цвета *********************************/
+
+.colors{
+	padding: 11px 0 17px 20px; font-size: 0;
+	border-top: 1px solid #e5e5e5;
+}
+.colors label{
+	display: inline-block;
+	width: 33px;
+	height: 33px;
+	padding: 2px;
+	margin: 0 6px 9px 0;
+	border-radius: 50%;
+	background-clip: content-box;
+}
+.colors input{display: none;}
+.colors input:checked + label{border: 1px solid lightblue;}
+label[for="yellow"]{background-color: #FFDE00;}
+label[for="blue"]{background-color: #32aaff;}
+label[for="orange"]{background-color: #fb580b;}
+label[for="gray"]{background-color: gray;}
+label[for="lightgray"]{background-color: #ccc;}
+label[for="white"]{background-color: #f1f1f1;}
+label[for="pink"]{background-color: #ea7be5;}
+label[for="green"]{background-color: #31d3ad;}
+label[for="darkblue"]{background-color: #29386f;}
+label[for="black"]{background-color: #323232;}
+label[for="brown"]{background-color: #a55a5a;}
+
+.memorySizeContainer .heading{border-bottom: 1px solid #e5e5e5;}
+
+.heading .plus{font-size: 18px;}
+
+input[type="reset"], input.submit{
+	width: 115px;
+	height: 35px;
+	margin: 20px 15px 0 11px; 
+	border-radius: 100px;
+	background: #ebebeb;
+	border: none;
+	font-size: 12px;
+	font-weight: 700;
+	color: #95969c;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+input.submit{
+	margin: 11px 0 25px 0;
+	background: #ffde00;
+	color: #3e464c;
+}
+
+
+/************************************ Подвал *********************************/
+
+ .footer{
+	height: 901px;
+	background: #e8e8e8;
+	color: #c0c0c0;
+	text-align: center;
+	font-size: 72px;
+	line-height: 909px;
+	letter-spacing: -1.2px;
+	text-transform: uppercase;
+}
+
+
+/************************************ Медиа для Ретины *********************************/
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+	.priceLine:before, .priceLine:after{background: url(../images/placeholder_x2.png);}
+	.specialSale1{background: url(../images/smart_mark_big_x2.png) no-repeat 27px 29px #fbfbfb;}
+	.specialSale2{background: url(../images/savings_x2.png) no-repeat 27px 29px #f0f9ff;}
+	.compare{background: url(../images/compare_small_x2.png) no-repeat 11px 50% #fff;}
 }
